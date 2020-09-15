@@ -1,4 +1,4 @@
-﻿spring:
+spring:
   profiles: default
 eureka:
   instance:
@@ -11,12 +11,8 @@ spring:
   zipkin:
     baseUrl: http://tracing-server:9411
 server:
-  port: 8081
+  port: 8085
 eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
-togglz:
-  features:
-    CALL_PEOPLE_SERVICE:
-      enabled: true
